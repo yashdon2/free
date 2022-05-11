@@ -6,18 +6,16 @@ Y = '\033[93;1m'
 B = '\033[94;1m'
 P = '\033[95;1m'
 C = '\033[96;1m'
-N = '\x1b[0m'
-
-import os
+N = '\x1b[0m'import os
 try:
-import requests
+	import requests
 except ImportError:
-os.system("pip install requests")
+	os.system("pip install requests")
 
 try:
-import concurrent.futures
+	import concurrent.futures
 except ImportError:
-os.system("pip install futures")
+	os.system("pip install futures")
 
 import os
 import sys
@@ -28,6 +26,7 @@ import platform
 import base64
 import subprocess
 from concurrent.futures import ThreadPoolExecutor
+
 
 def runtxt(z):
 for e in z + "\n":
